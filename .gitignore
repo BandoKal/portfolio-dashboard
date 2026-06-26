@@ -1,0 +1,4 @@
+.DS_Store
+node_modules/
+dashboard-*.png
+verify-dashboard.mjs

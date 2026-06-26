@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason Bandy - Portfolio Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#overview" aria-label="Jason Bandy portfolio dashboard">
+      <span class="brand-mark">JB</span>
+      <span>
+        <strong>Jason Bandy</strong>
+        <small>Software Engineering Leader</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#systems">Systems</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="resume-link" href="assets/jason-bandy-resume.pdf">Resume PDF</a>
+  </header>
+
+  <main>
+    <section class="hero" id="overview" aria-labelledby="page-title">
+      <img class="hero-image" src="assets/operations-dashboard-hero.png" alt="Abstract command center dashboards for AI, cloud, and mobile device operations">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Platform Engineering | AI/ML | Enterprise Mobile Systems</p>
+        <h1 id="page-title">Engineering platforms and operating systems for global-scale operations.</h1>
+        <p class="hero-copy">I build software, teams, and technical strategies that turn complex operational systems into measurable business outcomes across cloud, mobile, AI, and developer platforms.</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#systems">View portfolio</a>
+          <a class="secondary-action" href="mailto:jason.bandy948@gmail.com">Contact</a>
+        </div>
+      </div>
+      <aside class="status-panel" aria-label="Portfolio highlights">
+        <div>
+          <span class="status-label">Current focus</span>
+          <strong>Amazon Operations Technology Solutions</strong>
+        </div>
+        <div>
+          <span class="status-label">Portfolio scale</span>
+          <strong>$250M+ programs | 400K+ devices</strong>
+        </div>
+        <div>
+          <span class="status-label">Base</span>
+          <strong>Nashville, TN</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section class="metrics-band" aria-label="Impact metrics">
+      <article>
+        <span class="metric-value">$250M+</span>
+        <span class="metric-label">Technology portfolio supported</span>
+      </article>
+      <article>
+        <span class="metric-value">$92M+</span>
+        <span class="metric-label">Savings delivered</span>
+      </article>
+      <article>
+        <span class="metric-value">400K+</span>
+        <span class="metric-label">Devices in scope</span>
+      </article>
+      <article>
+        <span class="metric-value">1,200+</span>
+        <span class="metric-label">Global facilities impacted</span>
+      </article>
+    </section>
+
+    <section class="dashboard-section" id="systems">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Systems</p>
+        <h2>Work That Connects Code To Operations</h2>
+        <div class="segmented-control" aria-label="Project filter">
+          <button type="button" class="segment active" data-filter="all">All</button>
+          <button type="button" class="segment" data-filter="ai">AI</button>
+          <button type="button" class="segment" data-filter="platform">Platform</button>
+          <button type="button" class="segment" data-filter="mobile">Mobile</button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="ai platform">
+          <div class="card-topline">
+            <span>AI Platform</span>
+            <strong>$250M+</strong>
+          </div>
+          <h3>Capital Planning Analytics Platform</h3>
+          <p>Python and AWS Bedrock platform for natural-language analysis, SQL generation, optimization, and multi-format reporting across equipment datasets.</p>
+          <ul>
+            <li>Reduced analysis cycles from weeks to hours</li>
+            <li>Built ETL, validation, and scenario optimization workflows</li>
+            <li>Supported investment decisions across 800+ facilities</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="mobile platform">
+          <div class="card-topline">
+            <span>Enterprise Mobile</span>
+            <strong>400K+</strong>
+          </div>
+          <h3>Device Fleet Health APIs</h3>
+          <p>Production API foundations for battery health monitoring, emergent event detection, capacity degradation, and proactive fleet lifecycle workflows.</p>
+          <ul>
+            <li>Delivered five critical REST endpoints</li>
+            <li>Enabled real-time warehouse and battery analytics</li>
+            <li>Created base for predictive maintenance initiatives</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="mobile">
+          <div class="card-topline">
+            <span>Device Strategy</span>
+            <strong>$92M+</strong>
+          </div>
+          <h3>Mobile Technology Modernization</h3>
+          <p>Multi-vendor lifecycle strategy replacing 386K+ devices while improving cost, resilience, procurement leverage, and operational continuity.</p>
+          <ul>
+            <li>Delivered 32% per-unit cost reduction</li>
+            <li>Projected $126M annual productivity gains</li>
+            <li>Reduced single-vendor dependency across global operations</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-category="platform mobile">
+          <div class="card-topline">
+            <span>Architecture</span>
+            <strong>166K+</strong>
+          </div>
+          <h3>Universal Scanner Compatibility</h3>
+          <p>Cross-vendor scanner abstraction design for Android applications across Zebra, Honeywell, and PointMobile device ecosystems.</p>
+          <ul>
+            <li>Designed provider pattern for scanner integrations</li>
+            <li>Unblocked ring scanner deployments across regions</li>
+            <li>Reduced vendor-specific application logic</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard-section split-layout" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Leadership Timeline</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <time>2023 - Present</time>
+          <div>
+            <h3>System Development Manager, Amazon</h3>
+            <p>Leads system development and strategic technology programs within Operations Technology Solutions, spanning AI analytics, mobile infrastructure, device fleet reliability, and global lifecycle programs.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <time>2023</time>
+          <div>
+            <h3>National Director, Software Engineering, NFIB</h3>
+            <p>Modernized engineering practices, established standards, and defined multi-year roadmap alignment between software delivery and business outcomes.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <time>2019 - 2023</time>
+          <div>
+            <h3>Senior Director, Software Engineering Center, HCA Healthcare</h3>
+            <p>Built enterprise developer experience, cloud governance, platform engineering, FinOps, CI/CD standards, and team operating models for large-scale healthcare technology teams.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <time>2016 - 2019</time>
+          <div>
+            <h3>Principal / Senior Staff Mobile Engineer, HCA Healthcare</h3>
+            <p>Led mobile strategy, application architecture, CI/CD, release governance, analytics instrumentation, and secure mobile delivery for healthcare applications.</p>
+          </div>
+        </article>
+      </div>
+
+      <aside class="impact-panel">
+        <h3>Operating Range</h3>
+        <div class="bar-row">
+          <span>AI and data platforms</span>
+          <div class="bar"><span style="width: 92%"></span></div>
+        </div>
+        <div class="bar-row">
+          <span>Platform engineering</span>
+          <div class="bar"><span style="width: 95%"></span></div>
+        </div>
+        <div class="bar-row">
+          <span>Enterprise mobile systems</span>
+          <div class="bar"><span style="width: 98%"></span></div>
+        </div>
+        <div class="bar-row">
+          <span>Engineering leadership</span>
+          <div class="bar"><span style="width: 94%"></span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="dashboard-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Capability Map</p>
+        <h2>Technical And Leadership Stack</h2>
+      </div>
+
+      <div class="skills-board">
+        <article>
+          <h3>Cloud + AI</h3>
+          <p>AWS Bedrock, Claude, prompt engineering, LLM integration, AWS Lambda, S3, Google Cloud Platform.</p>
+        </article>
+        <article>
+          <h3>Data Engineering</h3>
+          <p>Python, SQL, pandas, SQLite, PostgreSQL, ETL pipelines, schema inference, validation, reporting.</p>
+        </article>
+        <article>
+          <h3>Platform + DevEx</h3>
+          <p>Backstage, Terraform, CI/CD, DevOps, API management, internal tooling, engineering playbooks.</p>
+        </article>
+        <article>
+          <h3>Mobile Systems</h3>
+          <p>Android SDK, iOS, MDM, barcode scanning, Bluetooth peripherals, device lifecycle and fleet management.</p>
+        </article>
+        <article>
+          <h3>Leadership</h3>
+          <p>Team Topologies, engineering strategy, vendor partnerships, roadmap planning, stakeholder alignment.</p>
+        </article>
+        <article>
+          <h3>Financial Impact</h3>
+          <p>FinOps, TCO modeling, NPV/IRR analysis, capital planning, cost optimization, procurement strategy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard-section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s Talk About Platform Strategy, AI Systems, Or Engineering Leadership</h2>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:jason.bandy948@gmail.com">jason.bandy948@gmail.com</a>
+        <a href="tel:+16158400718">615-840-0718</a>
+        <a href="https://www.linkedin.com/in/jason-bandy-11bba650">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
