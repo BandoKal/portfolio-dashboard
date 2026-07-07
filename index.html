@@ -18,7 +18,7 @@
     <nav class="nav-links" aria-label="Primary navigation">
       <a href="#systems">Systems</a>
       <a href="#mobile-architecture">Mobile</a>
-      <a href="#work-examples">Work</a>
+      <a href="#case-studies">Case Studies</a>
       <a href="#experience">Experience</a>
       <a href="#writing">Writing</a>
       <a href="#skills">Skills</a>
@@ -184,43 +184,150 @@
       </div>
     </section>
 
-    <section class="dashboard-section work-section" id="work-examples">
+    <section class="dashboard-section work-section" id="case-studies">
       <div class="section-heading">
-        <p class="eyebrow">Anonymized Work Examples</p>
-        <h2>Sanitized Case Studies For Hiring Conversations</h2>
+        <p class="eyebrow">Anonymized Case Studies</p>
+        <h2>Representative Work, Sanitized For Public Review</h2>
       </div>
 
-      <div class="case-study-grid">
-        <article class="case-study-card">
-          <div class="case-meta">Mobile architecture | Android SDK | Peripheral integration</div>
-          <h3>Cross-Vendor Scanner Abstraction</h3>
-          <p class="case-problem"><strong>Problem:</strong> Multiple device and scanner vendors created app-level coupling, inconsistent scan events, and a support model that did not scale.</p>
-          <p><strong>Approach:</strong> Designed a provider-based abstraction with scanner manager, provider factory, scan listener, normalized scan data, and configuration profiles. The design separated vendor-specific code from application behavior.</p>
-          <p><strong>Outcome:</strong> Reduced vendor lock-in, improved extensibility, and gave application teams one interface for a mixed hardware environment.</p>
+      <div class="case-tabs" aria-label="Case study selector">
+        <button type="button" class="case-tab active" data-case="scanner">Scanner Abstraction</button>
+        <button type="button" class="case-tab" data-case="fleet">Fleet Health</button>
+        <button type="button" class="case-tab" data-case="strategy">Device Strategy</button>
+        <button type="button" class="case-tab" data-case="devex">Developer Platform</button>
+      </div>
+
+      <div class="case-study-stage">
+        <article class="case-study-panel active" data-case-panel="scanner">
+          <div class="case-panel-header">
+            <span class="case-meta">Mobile architecture | Android SDK | Peripheral integration</span>
+            <h3>Cross-Vendor Scanner Abstraction</h3>
+            <p>Designed an application-facing architecture that decoupled barcode scanning behavior from vendor-specific device implementations.</p>
+          </div>
+          <div class="case-panel-grid">
+            <div>
+              <h4>Context</h4>
+              <p>A mixed mobile hardware environment was creating app-level coupling. Applications had to understand device-specific scan sources, scanner services, and peripheral behavior, which made support and future vendor flexibility harder than it needed to be.</p>
+            </div>
+            <div>
+              <h4>Architecture Work</h4>
+              <p>Defined a provider pattern with a scanner manager, provider factory, scan listener, normalized scan event model, scanner configuration object, and compatibility layer for gradual adoption.</p>
+            </div>
+            <div>
+              <h4>Leadership Work</h4>
+              <p>Translated operational friction into technical requirements, aligned application and device stakeholders, and created migration guidance so teams could adopt the pattern without a disruptive rewrite.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Reduced vendor lock-in, simplified app integration, and created a scalable way to support new devices and peripherals through isolated provider implementations.</p>
+            </div>
+          </div>
+          <div class="case-artifacts">
+            <span>Sanitized artifacts represented:</span>
+            <strong>architecture brief</strong>
+            <strong>component model</strong>
+            <strong>migration pattern</strong>
+            <strong>testing matrix</strong>
+          </div>
         </article>
 
-        <article class="case-study-card">
-          <div class="case-meta">Fleet reliability | APIs | Observability</div>
-          <h3>Mobile Fleet Health Platform</h3>
-          <p class="case-problem"><strong>Problem:</strong> Device issues were discovered reactively, and leaders lacked consistent visibility into battery health, degraded capacity, emergent events, and warehouse-level inventory.</p>
-          <p><strong>Approach:</strong> Delivered API foundations for health aggregation, event detection, time-series analysis, and unhealthy threshold monitoring across a large global mobile fleet.</p>
-          <p><strong>Outcome:</strong> Created the technical base for proactive maintenance, dashboarding, lifecycle planning, and predictive reliability work.</p>
+        <article class="case-study-panel" data-case-panel="fleet">
+          <div class="case-panel-header">
+            <span class="case-meta">Fleet reliability | APIs | Observability</span>
+            <h3>Mobile Fleet Health Platform</h3>
+            <p>Built API foundations and monitoring concepts for proactive health management across a large global enterprise mobile fleet.</p>
+          </div>
+          <div class="case-panel-grid">
+            <div>
+              <h4>Context</h4>
+              <p>Device reliability work was too reactive. Leaders and operators needed better visibility into battery health, degraded capacity, emergent safety events, inventory by location, and unhealthy thresholds.</p>
+            </div>
+            <div>
+              <h4>Architecture Work</h4>
+              <p>Delivered API patterns for location-level aggregation, inventory views, threshold monitoring, event detection, and time-series analysis suitable for dashboards and automation workflows.</p>
+            </div>
+            <div>
+              <h4>Leadership Work</h4>
+              <p>Framed fleet health as an operational system rather than a reporting project, connecting engineering telemetry to proactive maintenance, support efficiency, and lifecycle planning.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Created a foundation for predictive maintenance, reduced manual investigation, and helped teams reason about device reliability with fresher and more actionable data.</p>
+            </div>
+          </div>
+          <div class="case-artifacts">
+            <span>Sanitized artifacts represented:</span>
+            <strong>API capability map</strong>
+            <strong>metrics framework</strong>
+            <strong>dashboard plan</strong>
+            <strong>operational roadmap</strong>
+          </div>
         </article>
 
-        <article class="case-study-card">
-          <div class="case-meta">Mobile strategy | Cost optimization | Lifecycle</div>
-          <h3>Heterogeneous Device Strategy</h3>
-          <p class="case-problem"><strong>Problem:</strong> A single-vendor mobile fleet created cost pressure, supply-chain risk, and limited negotiating leverage during major lifecycle events.</p>
-          <p><strong>Approach:</strong> Built function-based device selection, total-cost modeling, certification gates, pilot validation, and multi-vendor sourcing patterns.</p>
-          <p><strong>Outcome:</strong> Supported a global modernization strategy with measurable savings, lower dependency risk, and a repeatable model for future lifecycle programs.</p>
+        <article class="case-study-panel" data-case-panel="strategy">
+          <div class="case-panel-header">
+            <span class="case-meta">Mobile strategy | Cost optimization | Lifecycle</span>
+            <h3>Heterogeneous Device Strategy</h3>
+            <p>Led a mobile fleet modernization strategy that connected architecture, lifecycle risk, procurement flexibility, and operational continuity.</p>
+          </div>
+          <div class="case-panel-grid">
+            <div>
+              <h4>Context</h4>
+              <p>A large mobile estate had cost pressure, lifecycle deadlines, and dependency risk from a narrow hardware strategy. Device choices needed to match work patterns, not just replace old models one-for-one.</p>
+            </div>
+            <div>
+              <h4>Architecture Work</h4>
+              <p>Developed function-based device selection, compatibility gates, pilot validation, total-cost modeling, and phased rollout criteria to support a heterogeneous fleet.</p>
+            </div>
+            <div>
+              <h4>Leadership Work</h4>
+              <p>Aligned operations, finance, procurement, safety, and engineering stakeholders around a decision model that balanced capability, cost, reliability, and rollout risk.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Supported meaningful cost savings, reduced single-vendor dependency, and established a repeatable lifecycle model for future mobile technology programs.</p>
+            </div>
+          </div>
+          <div class="case-artifacts">
+            <span>Sanitized artifacts represented:</span>
+            <strong>decision framework</strong>
+            <strong>TCO model</strong>
+            <strong>certification gates</strong>
+            <strong>rollout plan</strong>
+          </div>
         </article>
 
-        <article class="case-study-card">
-          <div class="case-meta">Platform engineering | DevEx | Cloud governance</div>
-          <h3>Developer Experience Platform</h3>
-          <p class="case-problem"><strong>Problem:</strong> Engineering teams needed shared standards, cloud patterns, CI/CD templates, and a clearer path to self-service delivery.</p>
-          <p><strong>Approach:</strong> Built platform and enabling-team capabilities around developer portals, infrastructure as code, DevOps playbooks, cloud governance, and FinOps practices.</p>
-          <p><strong>Outcome:</strong> Improved consistency, reduced friction, and gave product teams stronger paved roads for delivery.</p>
+        <article class="case-study-panel" data-case-panel="devex">
+          <div class="case-panel-header">
+            <span class="case-meta">Platform engineering | DevEx | Cloud governance</span>
+            <h3>Developer Experience Platform</h3>
+            <p>Built platform engineering capabilities that gave product teams clearer standards, reusable delivery patterns, and better self-service paths.</p>
+          </div>
+          <div class="case-panel-grid">
+            <div>
+              <h4>Context</h4>
+              <p>Engineering teams needed consistent cloud patterns, CI/CD templates, platform documentation, DevOps practices, and clearer operating models for delivery at enterprise scale.</p>
+            </div>
+            <div>
+              <h4>Architecture Work</h4>
+              <p>Established developer portal strategy, infrastructure-as-code standards, cloud governance, DevOps playbooks, secure development patterns, and platform-team interfaces.</p>
+            </div>
+            <div>
+              <h4>Leadership Work</h4>
+              <p>Used team design and enablement practices to shift platform work from ad hoc support toward reusable services, paved roads, and clearer ownership boundaries.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Improved engineering consistency, lowered delivery friction, and helped teams move faster while preserving operational, security, and financial guardrails.</p>
+            </div>
+          </div>
+          <div class="case-artifacts">
+            <span>Sanitized artifacts represented:</span>
+            <strong>platform roadmap</strong>
+            <strong>playbook model</strong>
+            <strong>team topology</strong>
+            <strong>governance patterns</strong>
+          </div>
         </article>
       </div>
     </section>

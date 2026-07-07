@@ -316,7 +316,8 @@ h1 {
 .architecture-lead,
 .architecture-grid article,
 .case-study-card,
-.blog-card {
+.blog-card,
+.case-study-panel {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -371,7 +372,8 @@ h1 {
 .architecture-lead p,
 .architecture-grid p,
 .case-study-card p,
-.blog-card p {
+.blog-card p,
+.case-study-panel p {
   color: var(--muted);
 }
 
@@ -437,6 +439,120 @@ h1 {
 
 .work-section {
   background: #eef3f1;
+}
+
+.case-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.case-tab {
+  min-height: 42px;
+  flex: 0 0 auto;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.case-tab.active {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: white;
+}
+
+.case-study-stage {
+  min-height: 620px;
+}
+
+.case-study-panel {
+  display: none;
+  overflow: hidden;
+}
+
+.case-study-panel.active {
+  display: block;
+}
+
+.case-panel-header {
+  padding: clamp(22px, 4vw, 38px);
+  background: var(--teal-dark);
+  color: white;
+}
+
+.case-panel-header .case-meta {
+  color: var(--amber);
+}
+
+.case-panel-header h3 {
+  max-width: 860px;
+  margin-bottom: 12px;
+  font-size: clamp(1.8rem, 4vw, 3.25rem);
+  line-height: 1;
+}
+
+.case-panel-header p {
+  max-width: 860px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.08rem;
+}
+
+.case-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.case-panel-grid div {
+  min-height: 280px;
+  padding: 24px;
+  border-right: 1px solid var(--line);
+}
+
+.case-panel-grid div:last-child {
+  border-right: 0;
+}
+
+.case-panel-grid h4 {
+  margin: 0 0 10px;
+  color: var(--teal);
+  font-size: 1.04rem;
+}
+
+.case-artifacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 18px 24px;
+  border-top: 1px solid var(--line);
+  background: #fbfcfa;
+}
+
+.case-artifacts span {
+  margin-right: 6px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.case-artifacts strong {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: #e8eeee;
+  color: var(--teal-dark);
+  font-size: 0.84rem;
 }
 
 .case-study-grid,
@@ -667,8 +783,13 @@ h1 {
   .project-grid,
   .skills-board,
   .case-study-grid,
-  .blog-grid {
+  .blog-grid,
+  .case-panel-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-panel-grid div:nth-child(2) {
+    border-right: 0;
   }
 
   .metrics-band {
@@ -729,8 +850,23 @@ h1 {
   .metrics-band,
   .architecture-grid,
   .case-study-grid,
-  .blog-grid {
+  .blog-grid,
+  .case-panel-grid {
     grid-template-columns: 1fr;
+  }
+
+  .case-study-stage {
+    min-height: 0;
+  }
+
+  .case-panel-grid div {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .case-panel-grid div:last-child {
+    border-bottom: 0;
   }
 
   .timeline-item {
