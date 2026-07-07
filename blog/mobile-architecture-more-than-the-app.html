@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Architecture Is More Than The App - Jason Bandy</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../index.html#overview" aria-label="Jason Bandy portfolio dashboard">
+      <span class="brand-mark">JB</span>
+      <span>
+        <strong>Jason Bandy</strong>
+        <small>Software Engineering Leader</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="../index.html#systems">Systems</a>
+      <a href="../index.html#mobile-architecture">Mobile</a>
+      <a href="../index.html#work-examples">Work</a>
+      <a href="../index.html#writing">Writing</a>
+    </nav>
+    <a class="resume-link" href="../assets/jason-bandy-resume.pdf">Resume PDF</a>
+  </header>
+
+  <main class="article-page">
+    <article class="article-shell">
+      <a class="back-link" href="../index.html#writing">Back to writing</a>
+      <p class="eyebrow">Mobile Architecture</p>
+      <h1>Mobile Architecture Is More Than The App</h1>
+      <p class="article-dek">The mobile application is only one part of a production mobile system. The real architecture includes device state, operations, release controls, peripherals, and feedback loops.</p>
+
+      <p>When people talk about mobile architecture, the conversation often starts with patterns inside the app: view models, navigation, API clients, state management, persistence, and testing. Those are important. But in enterprise mobile environments, they are not enough.</p>
+
+      <p>A mobile system also includes the device it runs on, how that device is enrolled, how configuration reaches it, how peripherals connect, how releases are staged, how diagnostics flow back to engineering, and how operations recover when something breaks in the field.</p>
+
+      <h2>The Architecture Boundary Is Larger Than The Codebase</h2>
+      <p>For field-critical mobile systems, I look at architecture across five layers:</p>
+      <ul>
+        <li><strong>Application layer:</strong> user flows, API integration, local persistence, telemetry, testability, and maintainability.</li>
+        <li><strong>Device layer:</strong> operating system versions, MDM policy, enrollment state, battery behavior, storage, connectivity, and lifecycle.</li>
+        <li><strong>Peripheral layer:</strong> scanners, printers, Bluetooth devices, profile compatibility, pairing flows, and fault recovery.</li>
+        <li><strong>Delivery layer:</strong> CI/CD, release governance, staged rollout, app store or enterprise distribution, and rollback plans.</li>
+        <li><strong>Operations layer:</strong> dashboards, logs, health metrics, incident response, fleet analytics, and feedback from real users.</li>
+      </ul>
+
+      <h2>Good Mobile Architecture Reduces Surprise</h2>
+      <p>The goal is not to design for a perfect device on a perfect network with a perfect user. The goal is to reduce surprise when reality shows up: intermittent connectivity, OS drift, worn hardware, drained batteries, failed peripherals, bad configuration, or a release that behaves differently in one region than another.</p>
+
+      <p>That is why I care about observability, configuration, and lifecycle as much as app structure. A technically elegant app can still fail the business if the platform around it cannot explain what happened, recover quickly, or adapt safely.</p>
+
+      <h2>What I Want Hiring Managers To Know</h2>
+      <p>I bring both sides of the mobile conversation: hands-on mobile engineering experience and platform-scale operating experience. I can talk about app architecture, but I can also talk about device fleets, release systems, MDM, peripherals, field diagnostics, and the leadership patterns required to keep mobile work aligned with business outcomes.</p>
+    </article>
+  </main>
+</body>
+</html>

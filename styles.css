@@ -312,7 +312,11 @@ h1 {
 
 .project-card,
 .skills-board article,
-.impact-panel {
+.impact-panel,
+.architecture-lead,
+.architecture-grid article,
+.case-study-card,
+.blog-card {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -363,7 +367,11 @@ h1 {
 
 .project-card p,
 .skills-board p,
-.timeline p {
+.timeline p,
+.architecture-lead p,
+.architecture-grid p,
+.case-study-card p,
+.blog-card p {
   color: var(--muted);
 }
 
@@ -375,6 +383,186 @@ h1 {
 
 .project-card li {
   margin-top: 8px;
+}
+
+.mobile-architecture-section {
+  background: #ffffff;
+}
+
+.architecture-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.52fr) minmax(0, 1fr);
+  gap: 18px;
+}
+
+.architecture-lead {
+  padding: 26px;
+  background: var(--ink);
+  color: white;
+}
+
+.architecture-lead h3 {
+  margin-bottom: 12px;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1;
+}
+
+.architecture-lead p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.architecture-grid article {
+  min-height: 220px;
+  padding: 22px;
+}
+
+.architecture-grid span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #e8eeee;
+  color: var(--teal);
+  font-weight: 850;
+}
+
+.work-section {
+  background: #eef3f1;
+}
+
+.case-study-grid,
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.case-study-card {
+  min-height: 420px;
+  padding: 22px;
+}
+
+.case-meta,
+.blog-kicker {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--coral);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.case-study-card h3,
+.blog-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.22rem;
+  line-height: 1.15;
+}
+
+.case-problem {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.writing-section {
+  background: #ffffff;
+}
+
+.blog-grid {
+  grid-template-columns: 1.25fr 1fr 1fr;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+  padding: 24px;
+}
+
+.featured-post {
+  background: var(--teal-dark);
+  color: white;
+}
+
+.featured-post p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.blog-card a {
+  align-self: flex-start;
+  margin-top: auto;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--teal);
+  font-weight: 850;
+}
+
+.featured-post a {
+  border-color: rgba(255, 255, 255, 0.26);
+  color: white;
+}
+
+.article-page {
+  padding: clamp(34px, 6vw, 76px) clamp(20px, 5vw, 72px);
+}
+
+.article-shell {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 56px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.article-shell h1 {
+  max-width: 780px;
+  color: var(--ink);
+  font-size: clamp(2.1rem, 5vw, 4.1rem);
+}
+
+.article-shell h2 {
+  margin-top: 34px;
+  margin-bottom: 10px;
+  color: var(--teal);
+  font-size: clamp(1.25rem, 2.2vw, 1.8rem);
+}
+
+.article-shell p,
+.article-shell li {
+  color: #30434b;
+  font-size: 1.04rem;
+}
+
+.article-shell li {
+  margin-bottom: 10px;
+}
+
+.article-dek {
+  margin-bottom: 28px;
+  color: var(--muted);
+  font-size: 1.18rem;
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 24px;
+  color: var(--teal);
+  font-weight: 850;
 }
 
 .split-layout {
@@ -477,7 +665,9 @@ h1 {
 
 @media (max-width: 1050px) {
   .project-grid,
-  .skills-board {
+  .skills-board,
+  .case-study-grid,
+  .blog-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -487,7 +677,8 @@ h1 {
 
   .hero,
   .split-layout,
-  .contact-section {
+  .contact-section,
+  .architecture-layout {
     grid-template-columns: 1fr;
   }
 
@@ -535,7 +726,10 @@ h1 {
 
   .project-grid,
   .skills-board,
-  .metrics-band {
+  .metrics-band,
+  .architecture-grid,
+  .case-study-grid,
+  .blog-grid {
     grid-template-columns: 1fr;
   }
 

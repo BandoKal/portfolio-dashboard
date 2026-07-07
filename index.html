@@ -17,7 +17,10 @@
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
       <a href="#systems">Systems</a>
+      <a href="#mobile-architecture">Mobile</a>
+      <a href="#work-examples">Work</a>
       <a href="#experience">Experience</a>
+      <a href="#writing">Writing</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -29,9 +32,9 @@
       <img class="hero-image" src="assets/operations-dashboard-hero.png" alt="Abstract command center dashboards for AI, cloud, and mobile device operations">
       <div class="hero-shade"></div>
       <div class="hero-content">
-        <p class="eyebrow">Platform Engineering | AI/ML | Enterprise Mobile Systems</p>
-        <h1 id="page-title">Engineering platforms and operating systems for global-scale operations.</h1>
-        <p class="hero-copy">I build software, teams, and technical strategies that turn complex operational systems into measurable business outcomes across cloud, mobile, AI, and developer platforms.</p>
+        <p class="eyebrow">Mobile Architecture | Platform Engineering | AI/ML</p>
+        <h1 id="page-title">Building mobile platforms for high-scale operational environments.</h1>
+        <p class="hero-copy">I design mobile architectures, device platforms, and engineering organizations that make field-critical software reliable, observable, and easier to evolve.</p>
         <div class="hero-actions">
           <a class="primary-action" href="#systems">View portfolio</a>
           <a class="secondary-action" href="mailto:jason.bandy948@gmail.com">Contact</a>
@@ -40,11 +43,11 @@
       <aside class="status-panel" aria-label="Portfolio highlights">
         <div>
           <span class="status-label">Current focus</span>
-          <strong>Amazon Operations Technology Solutions</strong>
+          <strong>Enterprise mobile architecture and platform leadership</strong>
         </div>
         <div>
           <span class="status-label">Portfolio scale</span>
-          <strong>$250M+ programs | 400K+ devices</strong>
+          <strong>$250M+ programs | 800K+ devices</strong>
         </div>
         <div>
           <span class="status-label">Base</span>
@@ -63,8 +66,8 @@
         <span class="metric-label">Savings delivered</span>
       </article>
       <article>
-        <span class="metric-value">400K+</span>
-        <span class="metric-label">Devices in scope</span>
+        <span class="metric-value">800K+</span>
+        <span class="metric-label">Enterprise mobile devices influenced</span>
       </article>
       <article>
         <span class="metric-value">1,200+</span>
@@ -75,7 +78,7 @@
     <section class="dashboard-section" id="systems">
       <div class="section-heading">
         <p class="eyebrow">Selected Systems</p>
-        <h2>Work That Connects Code To Operations</h2>
+        <h2>Work That Connects Mobile Architecture To Operations</h2>
         <div class="segmented-control" aria-label="Project filter">
           <button type="button" class="segment active" data-filter="all">All</button>
           <button type="button" class="segment" data-filter="ai">AI</button>
@@ -102,7 +105,7 @@
         <article class="project-card" data-category="mobile platform">
           <div class="card-topline">
             <span>Enterprise Mobile</span>
-            <strong>400K+</strong>
+            <strong>800K+</strong>
           </div>
           <h3>Device Fleet Health APIs</h3>
           <p>Production API foundations for battery health monitoring, emergent event detection, capacity degradation, and proactive fleet lifecycle workflows.</p>
@@ -133,12 +136,91 @@
             <strong>166K+</strong>
           </div>
           <h3>Universal Scanner Compatibility</h3>
-          <p>Cross-vendor scanner abstraction design for Android applications across Zebra, Honeywell, and PointMobile device ecosystems.</p>
+          <p>Cross-vendor scanner abstraction design for Android applications across enterprise device ecosystems.</p>
           <ul>
             <li>Designed provider pattern for scanner integrations</li>
             <li>Unblocked ring scanner deployments across regions</li>
             <li>Reduced vendor-specific application logic</li>
           </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard-section mobile-architecture-section" id="mobile-architecture">
+      <div class="section-heading">
+        <p class="eyebrow">Mobile Architecture</p>
+        <h2>How I Think About Enterprise Mobile Systems</h2>
+      </div>
+
+      <div class="architecture-layout">
+        <article class="architecture-lead">
+          <h3>Mobile work is architecture work.</h3>
+          <p>Great mobile systems are not only screens and releases. They are offline behavior, device lifecycle, provisioning, observability, peripheral integration, platform guardrails, and the feedback loops that keep software useful in messy real-world environments.</p>
+          <p>I have led mobile strategy from hands-on application architecture through fleet-scale platform governance, including iOS, Android, mobile DevOps, MDM, scanning peripherals, release governance, and operations-facing telemetry.</p>
+        </article>
+
+        <div class="architecture-grid" aria-label="Mobile architecture capabilities">
+          <article>
+            <span>01</span>
+            <h3>App Architecture</h3>
+            <p>Secure auth, offline-aware flows, API integration, analytics instrumentation, mobile release governance, and maintainable patterns for teams shipping field-critical software.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Device Platforms</h3>
+            <p>Android SDK patterns, MDM, enrollment roles, configuration management, device compatibility, peripheral integration, and lifecycle planning across heterogeneous fleets.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Mobile DevOps</h3>
+            <p>CI/CD, release automation, test strategy, app store governance, artifact validation, deployment controls, and team standards that reduce release risk.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Operational Feedback</h3>
+            <p>Fleet health APIs, crash/error visibility, performance indicators, battery and connectivity metrics, dashboards, and diagnostics that connect engineering decisions to user impact.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard-section work-section" id="work-examples">
+      <div class="section-heading">
+        <p class="eyebrow">Anonymized Work Examples</p>
+        <h2>Sanitized Case Studies For Hiring Conversations</h2>
+      </div>
+
+      <div class="case-study-grid">
+        <article class="case-study-card">
+          <div class="case-meta">Mobile architecture | Android SDK | Peripheral integration</div>
+          <h3>Cross-Vendor Scanner Abstraction</h3>
+          <p class="case-problem"><strong>Problem:</strong> Multiple device and scanner vendors created app-level coupling, inconsistent scan events, and a support model that did not scale.</p>
+          <p><strong>Approach:</strong> Designed a provider-based abstraction with scanner manager, provider factory, scan listener, normalized scan data, and configuration profiles. The design separated vendor-specific code from application behavior.</p>
+          <p><strong>Outcome:</strong> Reduced vendor lock-in, improved extensibility, and gave application teams one interface for a mixed hardware environment.</p>
+        </article>
+
+        <article class="case-study-card">
+          <div class="case-meta">Fleet reliability | APIs | Observability</div>
+          <h3>Mobile Fleet Health Platform</h3>
+          <p class="case-problem"><strong>Problem:</strong> Device issues were discovered reactively, and leaders lacked consistent visibility into battery health, degraded capacity, emergent events, and warehouse-level inventory.</p>
+          <p><strong>Approach:</strong> Delivered API foundations for health aggregation, event detection, time-series analysis, and unhealthy threshold monitoring across a large global mobile fleet.</p>
+          <p><strong>Outcome:</strong> Created the technical base for proactive maintenance, dashboarding, lifecycle planning, and predictive reliability work.</p>
+        </article>
+
+        <article class="case-study-card">
+          <div class="case-meta">Mobile strategy | Cost optimization | Lifecycle</div>
+          <h3>Heterogeneous Device Strategy</h3>
+          <p class="case-problem"><strong>Problem:</strong> A single-vendor mobile fleet created cost pressure, supply-chain risk, and limited negotiating leverage during major lifecycle events.</p>
+          <p><strong>Approach:</strong> Built function-based device selection, total-cost modeling, certification gates, pilot validation, and multi-vendor sourcing patterns.</p>
+          <p><strong>Outcome:</strong> Supported a global modernization strategy with measurable savings, lower dependency risk, and a repeatable model for future lifecycle programs.</p>
+        </article>
+
+        <article class="case-study-card">
+          <div class="case-meta">Platform engineering | DevEx | Cloud governance</div>
+          <h3>Developer Experience Platform</h3>
+          <p class="case-problem"><strong>Problem:</strong> Engineering teams needed shared standards, cloud patterns, CI/CD templates, and a clearer path to self-service delivery.</p>
+          <p><strong>Approach:</strong> Built platform and enabling-team capabilities around developer portals, infrastructure as code, DevOps playbooks, cloud governance, and FinOps practices.</p>
+          <p><strong>Outcome:</strong> Improved consistency, reduced friction, and gave product teams stronger paved roads for delivery.</p>
         </article>
       </div>
     </section>
@@ -201,6 +283,34 @@
       </aside>
     </section>
 
+    <section class="dashboard-section writing-section" id="writing">
+      <div class="section-heading">
+        <p class="eyebrow">Writing</p>
+        <h2>Software Leadership Notes</h2>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card featured-post">
+          <span class="blog-kicker">Mobile Architecture</span>
+          <h3>Mobile Architecture Is More Than The App</h3>
+          <p>Enterprise mobile systems fail or succeed in the space between app code, device state, network reality, release governance, and operational telemetry. This is the operating model I use when evaluating mobile platform maturity.</p>
+          <a href="blog/mobile-architecture-more-than-the-app.html">Read article</a>
+        </article>
+        <article class="blog-card">
+          <span class="blog-kicker">Leadership</span>
+          <h3>Build Platforms That Make Good Decisions Easier</h3>
+          <p>Good platform teams do not win by centralizing every decision. They win by creating defaults, feedback loops, and interfaces that make the right path easier for product teams.</p>
+          <a href="blog/platforms-make-good-decisions-easier.html">Read article</a>
+        </article>
+        <article class="blog-card">
+          <span class="blog-kicker">Management</span>
+          <h3>What I Look For In Senior Engineers</h3>
+          <p>The jump from strong execution to senior leadership is about scope, judgment, communication, and building systems that continue working when you are not in the room.</p>
+          <a href="blog/what-i-look-for-in-senior-engineers.html">Read article</a>
+        </article>
+      </div>
+    </section>
+
     <section class="dashboard-section" id="skills">
       <div class="section-heading">
         <p class="eyebrow">Capability Map</p>
@@ -238,7 +348,7 @@
     <section class="dashboard-section contact-section" id="contact">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2>Let’s Talk About Platform Strategy, AI Systems, Or Engineering Leadership</h2>
+        <h2>Let’s Talk About Mobile Architecture, Platform Strategy, Or Engineering Leadership</h2>
       </div>
       <div class="contact-actions">
         <a href="mailto:jason.bandy948@gmail.com">jason.bandy948@gmail.com</a>
